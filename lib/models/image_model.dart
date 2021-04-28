@@ -5,9 +5,9 @@ class ImageModel {
   String url;
   String title;
 
-  ImageModel({this.id, this.url, this.title});
+  ImageModel(this.id, this.url, this.title);
 
-  //why?
+  //creating a new ImageModel instance out of JSON
   ImageModel.fromJson(Map<String, dynamic> parsedJson) {
     id = parsedJson['id'];
     url = parsedJson['url'];
